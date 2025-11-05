@@ -44,6 +44,7 @@ public class PizzaMargherita extends PizzaBuilder {
     public void setToppings(String topping) {
         this.toppings.add(topping);
     }
+
     public Pizza getResult() {
         return new Pizza(type, size, dough, toppings);
     }

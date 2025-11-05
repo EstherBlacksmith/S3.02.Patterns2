@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class PizzaBuilder implements Builder{
     private PizzaType type;
-    private String size;
+    private PizzaSize size;
     private String dough;
     private ArrayList<String> toppings;
 
@@ -13,7 +13,7 @@ public class PizzaBuilder implements Builder{
 
 
     @Override
-    public void setSize(String size) {
+    public void setSize(PizzaSize size) {
         this.size = size;
     }
 

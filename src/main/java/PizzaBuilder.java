@@ -1,10 +1,15 @@
+import builders.Builder;
+import enums.PizzaDough;
+import enums.PizzaSize;
+import enums.PizzaType;
+
 import java.util.ArrayList;
 
-public class PizzaBuilder implements Builder{
+public class PizzaBuilder implements Builder {
     private PizzaType type;
     private PizzaSize size;
-    private String dough;
-    private ArrayList<String> toppings;
+    private PizzaDough dough;
+    private ArrayList<String> toppings = new ArrayList<>();
 
     @Override
     public void setPizzaType(PizzaType type) {
@@ -18,7 +23,7 @@ public class PizzaBuilder implements Builder{
     }
 
     @Override
-    public void setDough(String dough) {
+    public void setDough(PizzaDough dough) {
         this.dough = dough;
     }
 
@@ -26,7 +31,6 @@ public class PizzaBuilder implements Builder{
     public void addToppings(String topping) {
         this.toppings.add(topping);
     }
-
 
     public Pizza getResult() {
         return new Pizza(type, size, dough, toppings);

@@ -18,6 +18,6 @@ public class Main {
         pizzaMargherita.setDough(PizzaDough.BORDO_RIPIENO_DI_FORMAGIO);
         pizzaMargherita.setToppings("Pomodoro");
         pizzaMargherita.setToppings("Mozzarella");
-        System.out.println( pizzaMargherita.toString());
+        System.out.println(pizzaMargherita);
     }
 }

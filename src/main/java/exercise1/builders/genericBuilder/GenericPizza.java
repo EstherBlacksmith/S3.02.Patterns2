@@ -1,8 +1,8 @@
-package genericBuilder;
+package exercise1.builders.genericBuilder;
 
-import enums.PizzaDough;
-import enums.PizzaSize;
-import enums.PizzaType;
+import exercise1.builders.enums.PizzaDough;
+import exercise1.builders.enums.PizzaSize;
+import exercise1.builders.enums.PizzaType;
 
 import java.util.ArrayList;
 

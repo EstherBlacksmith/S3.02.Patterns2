@@ -1,4 +1,4 @@
-package genericBuilder;
+package exercise1.builders.genericBuilder;
 
 import java.util.function.BiConsumer;
 import java.util.function.Supplier;

@@ -1,6 +1,9 @@
 import builders.PizzaMaster;
 import enums.PizzaDough;
 import enums.PizzaSize;
+import enums.PizzaType;
+import genericBuilder.GenericBuilder;
+import genericBuilder.GenericPizza;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,5 +22,17 @@ public class Main {
         pizzaMargherita.setToppings("Pomodoro");
         pizzaMargherita.setToppings("Mozzarella");
         System.out.println(pizzaMargherita);
+
+
+        GenericPizza pizza2 = GenericBuilder.of(GenericPizza::new)
+                .with(GenericPizza::setPizzaType, PizzaType.CARBONARA)
+                .with(GenericPizza::setPizzaDough, PizzaDough.SOTTILE)
+                .with(GenericPizza::setPizzaSize, PizzaSize.FAMILIAR)
+                .with(GenericPizza::setToppings, "Mozzarella")
+                .with(GenericPizza::setToppings, "Carbonara")
+                .with(GenericPizza::setToppings, "Pepe nero")
+                .build();
+
+        System.out.println(pizza2);
     }
 }

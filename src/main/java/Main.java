@@ -23,7 +23,6 @@ public class Main {
         pizzaMargherita.setToppings("Mozzarella");
         System.out.println(pizzaMargherita);
 
-
         GenericPizza pizza2 = GenericBuilder.of(GenericPizza::new)
                 .with(GenericPizza::setPizzaType, PizzaType.CARBONARA)
                 .with(GenericPizza::setPizzaDough, PizzaDough.SOTTILE)
@@ -34,5 +33,7 @@ public class Main {
                 .build();
 
         System.out.println(pizza2);
+
+
     }
 }

@@ -7,10 +7,10 @@ import enums.PizzaType;
 import java.util.ArrayList;
 
 public class GenericPizza {
+    protected ArrayList<String> toppings = new ArrayList<>();
     private PizzaDough PizzaDough;
     private PizzaSize pizzaSize;
     private PizzaType pizzaType;
-    protected ArrayList<String> toppings = new ArrayList<>();
 
     public PizzaDough getPizzaDough() {
         return PizzaDough;

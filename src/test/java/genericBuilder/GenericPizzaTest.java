@@ -1,10 +1,10 @@
 package genericBuilder;
 
-import exercise1.builders.enums.PizzaDough;
-import exercise1.builders.enums.PizzaSize;
-import exercise1.builders.enums.PizzaType;
-import exercise1.builders.genericBuilder.GenericBuilder;
-import exercise1.builders.genericBuilder.GenericPizza;
+import exercise1.enums.PizzaDough;
+import exercise1.enums.PizzaSize;
+import exercise1.enums.PizzaType;
+import exercise1.genericBuilder.GenericBuilder;
+import exercise1.genericBuilder.GenericPizza;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

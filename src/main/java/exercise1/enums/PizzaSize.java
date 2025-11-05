@@ -1,4 +1,4 @@
-package exercise1.builders.enums;
+package exercise1.enums;
 
 public enum PizzaSize {
     INDIVIDUAL, MEDIUM, FAMILIAR

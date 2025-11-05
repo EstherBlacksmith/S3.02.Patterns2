@@ -1,8 +1,8 @@
-package exercise1.builders;
+package exercise1.classicBuilder;
 
-import exercise1.builders.enums.PizzaDough;
-import exercise1.builders.enums.PizzaSize;
-import exercise1.builders.enums.PizzaType;
+import exercise1.enums.PizzaDough;
+import exercise1.enums.PizzaSize;
+import exercise1.enums.PizzaType;
 
 public interface Builder {
     void setPizzaType(PizzaType type);

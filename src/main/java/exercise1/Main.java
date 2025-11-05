@@ -1,10 +1,14 @@
-package exercise1.builders;
+package exercise1;
 
-import exercise1.builders.enums.PizzaDough;
-import exercise1.builders.enums.PizzaSize;
-import exercise1.builders.enums.PizzaType;
-import exercise1.builders.genericBuilder.GenericBuilder;
-import exercise1.builders.genericBuilder.GenericPizza;
+import exercise1.classicBuilder.Pizza;
+import exercise1.classicBuilder.PizzaBuilder;
+import exercise1.classicBuilder.PizzaMargherita;
+import exercise1.classicBuilder.PizzaMaster;
+import exercise1.enums.PizzaDough;
+import exercise1.enums.PizzaSize;
+import exercise1.enums.PizzaType;
+import exercise1.genericBuilder.GenericBuilder;
+import exercise1.genericBuilder.GenericPizza;
 
 public class Main {
     public static void main(String[] args) {

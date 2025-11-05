@@ -1,12 +1,12 @@
-package exercise1.builders;
+package exercise1.classicBuilder;
 
-import exercise1.builders.enums.PizzaDough;
-import exercise1.builders.enums.PizzaSize;
-import exercise1.builders.enums.PizzaType;
+import exercise1.enums.PizzaDough;
+import exercise1.enums.PizzaSize;
+import exercise1.enums.PizzaType;
 
 import java.util.ArrayList;
 
-final class Pizza {
+public final class Pizza {
     private final PizzaSize size;
     private final PizzaDough dough;
     private final ArrayList<String> toppings;

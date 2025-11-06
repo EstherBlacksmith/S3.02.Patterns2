@@ -1,0 +1,33 @@
+package exercise2.classicObserver;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class BrokerAgency {
+    private int marketValue;
+    private List<Broker> brokers = new ArrayList<>();
+
+    public void addObserver(Broker broker) {
+        this.brokers.add(broker);
+    }
+
+    public void removeObserver(Broker broker) {
+        this.brokers.remove(broker);
+    }
+
+    public void setMarketValue(int marketValue) {
+        this.marketValue = marketValue;
+        for (Broker broker : this.brokers) {
+            broker.update(this.marketValue);
+        }
+    }
+
+    public /*List<Broker>*/ void getBrokers() {
+
+        for (Broker broker : brokers) {
+            System.out.println(broker.toString());
+        }
+        //return brokers;
+    }
+
+}

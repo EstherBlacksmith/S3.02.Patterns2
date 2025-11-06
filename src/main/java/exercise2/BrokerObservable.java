@@ -4,9 +4,10 @@ import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
 public class BrokerObservable {
-    private int marketValue;
+    private int downJones;
+    private int ibex35;
 
-    private final PropertyChangeSupport support;
+    private PropertyChangeSupport support;
 
     public BrokerObservable() {
         support = new PropertyChangeSupport(this);
@@ -20,8 +21,13 @@ public class BrokerObservable {
         support.removePropertyChangeListener(propertyChangeListener);
     }
 
-    public void setMarketValue(int value) {
-        support.firePropertyChange("marketValue", this.marketValue, value);
-        this.marketValue = value;
+    public void setDownJones(int value) {
+        support.firePropertyChange("downJones", this.downJones, value);
+        this.downJones = value;
+    }
+
+    public void setibex35(int value) {
+        support.firePropertyChange("ibex35", this.ibex35, value);
+        this.ibex35 = value;
     }
 }

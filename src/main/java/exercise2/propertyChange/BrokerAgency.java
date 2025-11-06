@@ -1,4 +1,4 @@
-package exercise2;
+package exercise2.propertyChange;
 
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;

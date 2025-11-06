@@ -1,4 +1,4 @@
-package exercise2;
+package exercise2.propertyChange;
 
 public class Main {
     public static void main(String[] args) {

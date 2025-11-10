@@ -21,6 +21,10 @@ public class BrokerObservable {
         support.removePropertyChangeListener(propertyChangeListener);
     }
 
+    public PropertyChangeListener[] getPropertyChangeListeners() {
+        return support.getPropertyChangeListeners();
+    }
+
     public void setDownJones(int value) {
         support.firePropertyChange("downJones", this.downJones, value);
         this.downJones = value;

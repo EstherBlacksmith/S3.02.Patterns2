@@ -22,12 +22,15 @@ public class BrokerAgency {
         }
     }
 
-    public /*List<Broker>*/ void getBrokers() {
+    public void getBrokers() {
 
         for (Broker broker : brokers) {
             System.out.println(broker.toString());
         }
-        //return brokers;
+    }
+
+    public List<Broker> getBrokersList() {
+        return this.brokers;
     }
 
 }

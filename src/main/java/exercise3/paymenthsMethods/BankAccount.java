@@ -1,8 +1,10 @@
 package exercise3.paymenthsMethods;
 
+import exercise3.gateway.PaymentsCallback;
+
 import java.util.Objects;
 
-public class BankAccount implements PaymentMethod {
+public class BankAccount implements PaymentsCallback {
 
     private String accountNumber = "";
 
@@ -12,7 +14,8 @@ public class BankAccount implements PaymentMethod {
 
 
     @Override
-    public void onPaymentGateway(double amount) {
+    public void pay(Double amount) {
         System.out.println("Sending SEPA order. Bank account: " + accountNumber);
+
     }
 }

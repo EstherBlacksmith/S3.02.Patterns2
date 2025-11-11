@@ -1,8 +1,10 @@
 package exercise3.paymenthsMethods;
 
+import exercise3.gateway.PaymentsCallback;
+
 import java.util.Objects;
 
-public class CreditCard implements PaymentMethod {
+public class CreditCard implements PaymentsCallback {
     private String cardNumber = "";
 
     public CreditCard(String cardNumber) {
@@ -11,7 +13,8 @@ public class CreditCard implements PaymentMethod {
     }
 
     @Override
-    public void onPaymentGateway(double amount) {
+    public void pay(Double amount) {
         System.out.println("Sending Credit Card payment. Card number: " + cardNumber);
+
     }
 }

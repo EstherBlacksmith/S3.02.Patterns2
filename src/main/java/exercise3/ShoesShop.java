@@ -9,9 +9,6 @@ public class ShoesShop {
     public static void main(String[] args) {
         PaymentsGateway gateway = new PaymentsGateway();
 
-
-
-
         CreditCard creditCard = new CreditCard("1234-5678-9012-3456");
         Paypal paypal = new Paypal("email@exemple.com");
         BankAccount bankAccount = new BankAccount("ES12 3456 7890 1234 5678 9012");

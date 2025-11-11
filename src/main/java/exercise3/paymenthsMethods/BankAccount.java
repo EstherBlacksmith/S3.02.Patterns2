@@ -16,6 +16,5 @@ public class BankAccount implements PaymentsCallback {
     @Override
     public void pay(Double amount) {
         System.out.println("Sending SEPA order. Bank account: " + accountNumber);
-
     }
 }

@@ -15,6 +15,5 @@ public class Paypal implements PaymentsCallback {
     @Override
     public void pay(Double amount) {
         System.out.println("Sending Paypal payment. Email: " + email);
-
     }
 }

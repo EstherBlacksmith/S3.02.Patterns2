@@ -18,7 +18,7 @@ public class Main {
         chef.PizzaBiancha(builder);
 
         Pizza pizza = builder.getResult();
-        System.out.println("Pizza al forno :\n" + pizza.getType());
+        System.out.println("Pizza al forno :\n" + pizza.type());
 
         PizzaMargherita pizzaMargherita = new PizzaMargherita();
         pizzaMargherita.setType();

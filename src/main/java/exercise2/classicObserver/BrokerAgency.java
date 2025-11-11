@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BrokerAgency {
+    private final List<Broker> brokers = new ArrayList<>();
     private int marketValue;
-    private List<Broker> brokers = new ArrayList<>();
 
     public void addObserver(Broker broker) {
         this.brokers.add(broker);

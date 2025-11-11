@@ -7,10 +7,10 @@ import exercise1.enums.PizzaType;
 import java.util.ArrayList;
 
 public class PizzaBuilder implements Builder {
+    private final ArrayList<String> toppings = new ArrayList<>();
     private PizzaType type;
     private PizzaSize size;
     private PizzaDough dough;
-    private ArrayList<String> toppings = new ArrayList<>();
 
     @Override
     public void setPizzaType(PizzaType type) {

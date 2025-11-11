@@ -1,4 +1,4 @@
-package genericBuilder;
+package exercise1;
 
 import exercise1.enums.PizzaDough;
 import exercise1.enums.PizzaSize;

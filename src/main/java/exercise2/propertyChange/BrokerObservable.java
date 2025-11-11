@@ -4,10 +4,9 @@ import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
 public class BrokerObservable {
+    private final PropertyChangeSupport support;
     private int downJones;
     private int ibex35;
-
-    private PropertyChangeSupport support;
 
     public BrokerObservable() {
         support = new PropertyChangeSupport(this);

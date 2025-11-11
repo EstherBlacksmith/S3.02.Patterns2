@@ -25,9 +25,9 @@ class BrokerAgencyTest {
         System.out.println("Agency 2 New market value: " + agency2.getDownJonesValue());
         System.out.println("Agency 3 New market value: " + agency2.getDownJonesValue());
 
-        assert(newValue == agency1.getDownJonesValue());
-        assert(newValue == agency2.getDownJonesValue());
-        assert(newValue == agency3.getDownJonesValue());
+        assert (newValue == agency1.getDownJonesValue());
+        assert (newValue == agency2.getDownJonesValue());
+        assert (newValue == agency3.getDownJonesValue());
     }
 
     @Test
@@ -51,19 +51,18 @@ class BrokerAgencyTest {
         System.out.println("Agency 2 New market value: " + agency2.getDownJonesValue());
         System.out.println("Agency 3 New market value: " + agency2.getDownJonesValue());
 
-        assert(newValue != agency1.getDownJonesValue());
-        assert(newValue == agency2.getDownJonesValue());
-        assert(newValue == agency3.getDownJonesValue());
+        assert (newValue != agency1.getDownJonesValue());
+        assert (newValue == agency2.getDownJonesValue());
+        assert (newValue == agency3.getDownJonesValue());
 
         int oldMarketValue = 44;
         brokerObservable.setibex35(oldMarketValue);
 
-        assert(oldMarketValue != agency1.getIbex35Value());
-        assert(oldMarketValue == agency2.getIbex35Value());
-        assert(oldMarketValue == agency3.getIbex35Value());
+        assert (oldMarketValue != agency1.getIbex35Value());
+        assert (oldMarketValue == agency2.getIbex35Value());
+        assert (oldMarketValue == agency3.getIbex35Value());
 
     }
-
 
 
     @Test

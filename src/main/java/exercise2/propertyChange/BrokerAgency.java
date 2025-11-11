@@ -9,9 +9,9 @@ public class BrokerAgency implements PropertyChangeListener {
 
 
     public void propertyChange(PropertyChangeEvent event) {
-        if(event.getPropertyName().equals("downJones")) {
+        if (event.getPropertyName().equals("downJones")) {
             this.setDownJonesValue((Integer) event.getNewValue());
-        }else {
+        } else {
             this.setIbex35Value((Integer) event.getNewValue());
         }
     }

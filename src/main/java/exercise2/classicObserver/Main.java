@@ -13,7 +13,7 @@ public class Main {
         System.out.println("Old value: " + oldValue);
         System.out.println("Broker observer: " + brokerObserver.getMarketValue());
         System.out.println("Changing the value");
-        brokerAgency.setMarketValue( getRandomValue());
+        brokerAgency.setMarketValue(getRandomValue());
         System.out.println("Broker observer: " + brokerObserver.getMarketValue());
     }
 

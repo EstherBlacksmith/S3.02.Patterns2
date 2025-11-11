@@ -1,6 +1,6 @@
 package exercise2.classicObserver;
 
-public class Broker implements DownJones{
+public class Broker implements DownJones {
     private int marketValue;
 
     @Override
